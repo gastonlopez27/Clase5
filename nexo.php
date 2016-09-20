@@ -40,7 +40,8 @@ if(!isset($_FILES['_file']))
 					else
 					{
 						
-						$destino = "c:/xampp/htdocs/Clase5/foto/".$_FILES['_file']["name"].".".$Extension;
+
+						$destino = "foto/".$_FILES['_file']["name"].".".$Extension;
 						
 						//MUEVO EL ARCHIVO DEL TEMPORAL AL DESTINO FINAL
     					if (move_uploaded_file($_FILES['_file']["tmp_name"],$destino))
